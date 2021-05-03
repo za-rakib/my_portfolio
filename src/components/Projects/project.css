@@ -1,0 +1,15 @@
+.project{
+    background-color: #232741;
+}
+.per-card{
+
+    margin: 50px;}
+.btn{
+   background-color:#232741;
+   color: #fff;
+   font-weight: 600;
+   font-size:20px;
+}
+.btn:hover{
+    background-color:#19104e7e;
+}
