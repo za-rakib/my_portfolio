@@ -4,7 +4,8 @@ import image from '../images/about (2).jpg';
 
 const About = () => {
     return (
-        <div className='about row'>
+        <div className="container-fluid">
+            <div className='about row'>
              <div className="image col-md-5 offset-md-2 mt-5 pt-3">
              <img src={image} alt=""/>
              </div>
@@ -17,6 +18,7 @@ const About = () => {
                   <h5>Email:phpzarakib@gmail.com</h5>
                   <h5>Cell: +8801517037484</h5>
              </div>
+        </div>
         </div>
     );
 };

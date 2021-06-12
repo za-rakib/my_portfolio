@@ -20,22 +20,22 @@ const Navbar = () => {
                 </ul>
                 <ul className="navbar-nav ml-auto nav">
                     <li className="nav-item active">
-                        <Link className="nav-link mr-3" to="/home">HOME <span className="sr-only"></span></Link>
+                        <Link className="nav-link m-1" to="/home">HOME <span className="sr-only"></span></Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link mr-3" to="/about">ABOUT</Link>
+                        <Link className="nav-link m-1" to="/about">ABOUT</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link mr-3" to="/projects">PROJECTS</Link>                   
+                        <Link className="nav-link m-1" to="/projects">PROJECTS</Link>                   
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link mr-3" to="/blogs">BLOGS</Link>
+                        <Link className="nav-link m-1" to="/blogs">BLOGS</Link>
                     </li>
                     
                     <li className="nav-item">
-                        <Link className="nav-link mr-3" to="/contact">CONTACT</Link>
+                        <Link className="nav-link m-1" to="/contact">CONTACT</Link>
                     </li>
-                    <li className="nav-item resume">
+                    <li className="nav-item resume m-1">
                         <a  className="nav-link" href="https://drive.google.com/uc?export=download&id=10vFiy1oG0AuYo8G9cxM4ttvcd7_JQPmM"  > RESUME <FontAwesomeIcon icon={faArrowDown} /> </a>
                         
                     </li>

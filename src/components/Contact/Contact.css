@@ -1,6 +1,29 @@
+
+.contact{
+  width:100%;
+background: linear-gradient(-45deg, #ee7752, #dd759d, #23a6d5, #252a49);
+background-size: 400% 400%;
+background-size: 400% 400%;
+animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
 .contactSection{
-     background-color: rgb(239, 239, 239);
-  /* max-width: 800px; */
+     background-color: #242842;
   margin: auto auto;
   padding: 0;
+  width: 100%;
+}
+.form{
+ width:60%;
 }

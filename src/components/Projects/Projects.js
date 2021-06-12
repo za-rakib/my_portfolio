@@ -6,9 +6,10 @@ import './project.css'
 
 const Projects = () => {
     return (
-        <div className='project row d-flex justify-content-center'>
+       <div className="container-fluid">
+            <div className='project row d-flex justify-content-center'>
             <div className="card per-card col-md-3 mt-5">
-                <img style={{height:'300px', width:'100%'}} src={pro1} alt=""/>
+                    <img style={{height:'300px', width:'100%'}} src={pro1} alt=""/>
                     <div className="card-body">
                         <h5 className="text-center card-title">Sweet Fruits</h5>
                         <p className="card-text">Some quick example text to build on the </p>
@@ -36,6 +37,7 @@ const Projects = () => {
                </div>
                
             </div>
+       </div>
     );
 };
 

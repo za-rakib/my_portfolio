@@ -1,18 +1,28 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 import './Contact.css'
 
 const Contact = () => {
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('service_sieumxh', 'template_f3cx0yb', e.target,'user_Zi8QivQLiIpko9I0WdFMS')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset();
+      }
     return (
-        <section className='contactSection mt-5'>
-            <div>
-                <div className="row ">
+        <section className='contact contactSection  '>
+               <div className="container-fluid">
+               <div className="row">
                     <div className="col-sm-12">
-                        <div className="row">
-                            <div className="col-sm-8 col-sm-offset-2">
-                                <div>
-                                    <h2>Contact with Me</h2>
+                                <div className='mt-5 text-center'>
+                                    <h2 className='text-white'>Contact with Me</h2>
                                 </div>
-                                <form className="p-5 " method="post" data-form-title="CONTACT US">
+                                <form onSubmit={sendEmail} className="p-5 form offset-md-2 text-center" method="post" data-form-title="CONTACT US">
                                     <input type="hidden" data-form-email="true"></input>
                                     <div className="form-group">
                                         <input type="text" className="form-control" name="name" required="" placeholder="Name" data-form-field="Name"></input>
@@ -27,19 +37,15 @@ const Contact = () => {
                                         <textarea className="form-control" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
                                     </div>
                                     <div>
-                                        <button type="submit" className="btn btn-lg btn-danger">CONTACT US</button>
+                                        <button type="submit" value="send" className="btn btn-lg btn-danger">CONTACT US</button>
                                     </div>
                                 </form>
-                                {/* <form>
-                                    <div className="row pt-5 mx-auto">
-
-                                    </div>
-                                </form> */}
-                            </div>
-                        </div>
+                       
+                    
                     </div>
                 </div>
-            </div>
+               </div>
+         
         </section>
     );
 };
