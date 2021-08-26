@@ -37,7 +37,7 @@ const Contact = () => {
                                         <textarea className="form-control" name="message" placeholder="Message" rows="7" data-form-field="Message"></textarea>
                                     </div>
                                     <div>
-                                        <button type="submit" value="send" className="btn btn-lg btn-danger">CONTACT US</button>
+                                        <button type="submit" value="send" className="btn btn-lg btn-danger">CONTACT</button>
                                     </div>
                                 </form>
                        

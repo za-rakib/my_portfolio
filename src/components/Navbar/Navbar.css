@@ -12,17 +12,18 @@
 }
 a{
     color:#ffffff;
-    font-size: 20px;
-    font-weight:600;
+    font-size: 25px;
+    font-weight:700;
 }
 a:hover{
-    color:rgb(38, 16, 163);
+    color:#271880;
+    transition:1s;
 }
 .resume{
-    background-color: #2e3361;
+    background-color: #292d5a;
     border-radius: 10px;
 }
 .resume:hover{
-    background-color: rgb(74, 165, 47);
-    color: rgba(240, 11, 11, 0.472);
+    background-color: #151941;
+    color:rgb(165, 151, 167);
 }

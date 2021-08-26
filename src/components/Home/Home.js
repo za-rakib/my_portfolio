@@ -4,7 +4,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import './Home.css'
-import myImage2 from '../images/myPic2.jpg'
+import myImage2 from '../../images/myPic2.jpg'
 import Typewriter from 'typewriter-effect'
 
 

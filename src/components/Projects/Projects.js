@@ -1,44 +1,46 @@
-import React from 'react';
-import pro1 from '../images/pro1.png'
-import pro2 from '../images/pro2.png'
-import pro3 from '../images/pro3.png'
-import './project.css'
+import React from "react";
+import corona from "../../images/Corona Care.png";
+import car from "../../images/Car Services.png";
+import fruits from "../../images/React App.png";
+import "./project.css";
+import ProjectDetails from "./ProjectDetails";
+const project = [
+  {
+    image: corona,
+    title: "Corona Care",
+    text: "It is a MERN Stack SPA where patients can make any doctor's appointment for them.There are two roles in the website User and Admin.",
+    live:`https://corona-care-6424c.web.app/`,
+    client:`https://github.com/za-rakib/corona-treatment`,
+    server:`https://github.com/za-rakib/corona-care-server`
+  },
+  {
+    image: car,
+    title: "Car Repair",
+    text: "A full-stack single page web application with a dashboard. Where users can see the car servicing details and users can take any services.",
+    live:`https://car-services-e76d0.web.app/`,
+    client:`https://github.com/za-rakib/Car_services_client`,
+    server:`https://github.com/za-rakib/Car_services_server`
+  },
+  {
+    image: fruits,
+    title: "Sweet fruits",
+    text: "This is a simple e-commerce website for buying a variety of fruits, from where the buyer will buy any kind of fruits.",
+    live:`https://sweet-fruits-d5c1f.web.app/`,
+    client:`https://github.com/za-rakib/Sweet_fruits`,
+    server:`https://github.com/za-rakib/Sweet_fruits_server`
+  },
+];
 
 const Projects = () => {
-    return (
-       <div className="container-fluid">
-            <div className='project row d-flex justify-content-center'>
-            <div className="card per-card col-md-3 mt-5">
-                    <img style={{height:'300px', width:'100%'}} src={pro1} alt=""/>
-                    <div className="card-body">
-                        <h5 className="text-center card-title">Sweet Fruits</h5>
-                        <p className="card-text">Some quick example text to build on the </p>
-                        <a href="#" target="_blank" className="btn px-4  mr-4">LIVE </a>
-                        <a href="#" target="_blank" className="btn px-4 ml-4 "> GITHUB</a>
-                    </div>
-               </div>
-               <div className="card per-card  col-md-3 mt-5">
-                <img style={{height:'300px', width:'100%'}} src={pro2} alt=""/>
-                    <div className="card-body">
-                        <h5 className="text-center card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the </p>
-                        <a href="#" target="_blank" className="btn px-4  mr-4">LIVE </a>
-                        <a href="#" target="_blank" className="btn px-4 ml-4 "> GITHUB</a>
-                    </div>
-               </div>
-               <div className="card per-card  col-md-3 mt-5">
-                <img style={{height:'300px', width:'100%'}} src={pro3} alt=""/>
-                    <div className="card-body">
-                        <h5 className="text-center card-title">Card title</h5>
-                        <p className="card-text">Some quick example text to build on the </p>
-                        <a href="#"target="_blank" className="btn px-4  mr-4">LIVE </a>
-                        <a href="#"target="_blank" className="btn px-4 ml-4 "> GITHUB</a>
-                    </div>
-               </div>
-               
-            </div>
-       </div>
-    );
+  return (
+    <div className="container-fluid">
+      <div className="project row d-flex justify-content-center">
+        {project.map((project) => (
+          <ProjectDetails project={project} />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Projects;

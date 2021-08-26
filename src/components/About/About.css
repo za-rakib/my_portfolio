@@ -4,16 +4,18 @@
 }
 .about{
     background-color: #232741;
-    height:700px;
-
+    height: calc(100vh - 60px);
+    height: -webkit-calc(100vh - 60px);
+    height: -moz-calc(100vh - 60px);
 }
  img{
-    height:600px;
+  
     width: 400px;
     border-radius: 5%;
+    height: calc(85vh - 60px);
 }
 .about-text{
-margin-top: 150px;
+margin-top: 65px;
 }
 .about-text p{
     font-size:20px;

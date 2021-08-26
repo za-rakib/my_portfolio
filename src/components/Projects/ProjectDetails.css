@@ -1,0 +1,25 @@
+.per-card {
+  margin: 50px;
+  overflow: hidden;
+}
+.card-img {
+  height: 250px;
+  width: 100%;
+}
+.btn {
+  background-color: #232741;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+}
+.card-title {
+  font-size: 30px;
+  color: #475e9e;
+}
+.card-text {
+  color: #69696b;
+}
+.btn:hover {
+  background-color: #0000007e;
+  color: #fff;
+}

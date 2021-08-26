@@ -15,7 +15,7 @@ const Navbar = () => {
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul>
-                    <div className="name" href='/home'><h2>ZA Rakib</h2></div>
+                    <div className="name ml-5" href='/home'><h2> Rakib</h2></div>
                     
                 </ul>
                 <ul className="navbar-nav ml-auto nav">
@@ -36,7 +36,7 @@ const Navbar = () => {
                         <Link className="nav-link m-1" to="/contact">CONTACT</Link>
                     </li>
                     <li className="nav-item resume m-1">
-                        <a  className="nav-link" href="https://drive.google.com/uc?export=download&id=10vFiy1oG0AuYo8G9cxM4ttvcd7_JQPmM"  > RESUME <FontAwesomeIcon icon={faArrowDown} /> </a>
+                        <a  className="nav-link resume" href="https://drive.google.com/uc?export=download&id=10vFiy1oG0AuYo8G9cxM4ttvcd7_JQPmM"  > RESUME <FontAwesomeIcon icon={faArrowDown} /> </a>
                         
                     </li>
                 </ul>

@@ -1,9 +1,10 @@
-
 .contact{
-  width:100%;
+width:100%;
 background: linear-gradient(-45deg, #ee7752, #dd759d, #23a6d5, #252a49);
 background-size: 400% 400%;
-background-size: 400% 400%;
+height: calc(100vh - 60px);
+height: -webkit-calc(100vh - 60px);
+height: -moz-calc(100vh - 60px);
 animation: gradient 15s ease infinite;
 }
 
